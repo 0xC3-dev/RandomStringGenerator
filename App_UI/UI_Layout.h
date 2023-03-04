@@ -671,8 +671,8 @@ namespace ImGui
 							ImGui::CenterText(RSG::sGeneratedStrArray[i].c_str(), 0, FALSE, FALSE);
 						}
 					}
-				} ImGui::EndChild();
-			} ImGui::EndChild();
+				} ImGui::PopStyleColor(); ImGui::EndChild();
+			} ImGui::PopStyleColor(); ImGui::EndChild();
 		} ImGui::EndChild();
 	}
 }
