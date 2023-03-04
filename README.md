@@ -3,9 +3,9 @@ Generate Random Strings in Style with ease
 
 ## Setup
 * No external dependencies are needed to be included
-* C++ Language Standard: ISO C++20 Standard (/std:c++20)
-* C Language Standard: ISO C17 (2018) Standard (/std:c17)
-* Character Set: Use Multi-Byte Character Set
+* ```C++ Language Standard: ISO C++20 Standard (/std:c++20)```
+* ```C Language Standard: ISO C17 (2018) Standard (/std:c17)```
+* ```Character Set: Use Multi-Byte Character Set```
 
 ## Features
 * Generate Random Strings with varying lengths
