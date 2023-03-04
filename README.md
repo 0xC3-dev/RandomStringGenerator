@@ -14,7 +14,7 @@ Generate Random Strings in Style with ease
 * Copy Generated Strings right to your Clipboard
 
 ## Preview
-![RSG]
+![RSG](https://media.discordapp.net/attachments/895350789512519722/1081363217462329424/image.png)
 
 ## NOTE
 * I made this mainly because I kept using an online random string generator. I was honestly tired of having to go to the web so decided to make a little app for myself. Enjoy!
