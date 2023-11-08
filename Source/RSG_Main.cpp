@@ -8,6 +8,8 @@
 *   Update #3 : 11/07/23 | Changed Sub System type from Console to Windows so the Console App does not show regardless if your on Windows 10 or 11.
 * 
 *   Update #4 : 11/07/23 | Finally added version info to the application.
+* 
+*   Update #5 : 11/07/23 | Added tooltip for Slider Design button.
 */
 
 #include "RSG_Main.hpp"

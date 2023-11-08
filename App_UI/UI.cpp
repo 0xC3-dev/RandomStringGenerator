@@ -1,4 +1,4 @@
-#include "UI.hpp"
+﻿#include "UI.hpp"
 #include <iostream>
 #define MAX_RGB 255.0
 #define HELPMARKERDESC(str) ImGui::SameLine(); ImGui::TextColored(ImColor(0, 130, 15, 255), "[ ? ]"); if (ImGui::IsItemHovered()) ImGui::SetTooltip(str)
@@ -885,6 +885,14 @@ namespace ImGui
 				}
 
 				ImGui::ButtonSCP(ICON_FA_GRIP_LINES, &RSG::bOldSliderDesign, ImVec2(20, 30), ImVec2(50, 20), FALSE);
+				if (ImGui::IsItemHovered())
+				{
+					ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(4, 4));
+					ImGui::PushStyleColor(ImGuiCol_PopupBg, ImVec4(ImColor(64, 64, 64, 125)));
+					ImGui::SetTooltip("  -  Change Slider Design  -  ");
+					ImGui::PopStyleColor();
+					ImGui::PopStyleVar();
+				}
 				ImGui::ButtonSCP("COPY", &RSG::bCopyToClipboard, ImVec2(310, 30), ImVec2(50, 20), FALSE);
 
 				// Display Strings Window.
