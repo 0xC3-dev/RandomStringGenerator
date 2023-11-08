@@ -5,14 +5,10 @@
 #define IMGUI_NOTIFY
 
 #pragma once
-#include "../imgui/imgui.h"
-#include <vector>
-#include "../Fonts/FontAwesome5/font_awesome_5.h"
-#include "../Fonts/FontAwesome5/fa-solid-900.h"
 
 #define NOTIFY_MAX_MSG_LENGTH		255			// Max message content length
 #define NOTIFY_PADDING_X			20.f		// Bottom-left X padding
-#define NOTIFY_PADDING_Y			20.f		// Bottom-left Y padding
+#define NOTIFY_PADDING_Y			60.f		// Bottom-left Y padding
 #define NOTIFY_PADDING_MESSAGE_Y	10.f		// Padding Y between each message
 #define NOTIFY_FADE_IN_OUT_TIME		150			// Find in and out duration
 #define NOTIFY_DEFAULT_DISMISS		3000		// Auto dismiss after X ms
@@ -159,11 +155,6 @@ public:
 
 namespace notify
 {
-	static float GetY()
-	{
-		return ImGui::GetContentRegionAvail().y;
-	}
-
 	inline std::vector<toast> toast_list;
 
 	/// <summary>
@@ -215,7 +206,7 @@ namespace notify
 			ImGui::PushStyleColor(ImGuiCol_Text, text_color);
 			ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(ImColor(18, 18, 18, 255)));
 			ImGui::SetNextWindowBgAlpha(opacity);
-			ImGui::SetNextWindowPos(ImVec2(RSG::iScreenSizeX - NOTIFY_PADDING_X, RSG::iScreenSizeY - NOTIFY_PADDING_Y - height), ImGuiCond_Always, ImVec2(1.0f, 1.0f));
+			ImGui::SetNextWindowPos(ImVec2((float)RSG::iNotifyPosX - NOTIFY_PADDING_X, (float)RSG::iNotifyPosY - NOTIFY_PADDING_Y - height), ImGuiCond_Always, ImVec2(1.0f, 1.0f));
 			ImGui::Begin(window_name, NULL, NOTIFY_TOAST_FLAGS);
 			ImGui::SetCursorPosY(9);
 

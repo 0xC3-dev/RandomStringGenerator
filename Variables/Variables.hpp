@@ -1,17 +1,14 @@
 #pragma once
-#include <string>
-#include <vector>
-#include <random>
-#include <Windows.h>
-#include "../imgui/imgui.h"
+#include "../Includes/Includes.hpp"
 
 namespace RSG
 {
-	extern ImVec2 screenSize;
 	extern int iScreenSizeX;
 	extern int iScreenSizeY;
 	extern int iWindowSizeX;
 	extern int iWindowSizeY;
+	extern int iNotifyPosX;
+	extern int iNotifyPosY;
 	extern int iStringLength;
 	extern int iStringAmount;
 	extern int iStringType;
@@ -19,8 +16,10 @@ namespace RSG
 	extern bool bGenerateStrings;
 	extern bool bDisplayStrings;
 	extern bool bCopyToClipboard;
+	extern bool bCopyToClipboardNotify;
+	extern bool bOldSliderDesign;
 
-	extern std::string RandStr(size_t length, int stringType);
+	extern std::string RandStr(DWORD length, int stringType);
 
 	extern void CalcCenterScreen();
 

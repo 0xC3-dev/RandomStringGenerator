@@ -1,4 +1,12 @@
-#include "RSG_Main.h"
+﻿/*
+*   UPDATE Change Log:
+*
+*	Update #1 : 11/07/23 | Updated Codebase. Combined UI_Layout.hpp into UI.cpp. Also added Includes.hpp so all headers are cleaned up. Also satisfied all warnings.
+* 
+*   Update #2 : 11/07/23 | Also fixed an issue with ImGui::LogToClipboard copying the Notify message to the clipboard as well. Replaced it with an ImGui::LogBegin() and ImGui::LogFinish().
+*/
+
+#include "RSG_Main.hpp"
 
 int main()
 {
