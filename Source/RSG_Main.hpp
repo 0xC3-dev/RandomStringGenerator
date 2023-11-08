@@ -5,7 +5,7 @@ namespace Console
 {
 	void SetConsoleInfo()
 	{
-		ShowWindow(GetConsoleWindow(), TRUE);
+		SetConsoleTitle("Random String Generator");
 	}
 }
 

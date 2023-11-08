@@ -2,14 +2,17 @@
 Generate Random Strings in Style with ease
 
 ## Setup
-* No external dependencies are needed to be included
+* No external dependencies needed
 * ```C++ Language Standard: ISO C++20 Standard (/std:c++20)```
 * ```C Language Standard: ISO C17 (2018) Standard (/std:c17)```
 * ```Character Set: Use Multi-Byte Character Set```
 
+## Credits
+* Dear ImGui Framework - ocornut / https://github.com/ocornut/imgui
+
 ## Features
 * Generate Random Strings with varying lengths
-* Custom UI using ImGui Library Framework
+* Custom UI using ImGui Library Framework ( Added Custom Sliders )
 * Lightweight Application
 * Copy Generated Strings right to your Clipboard
 
@@ -17,6 +20,5 @@ Generate Random Strings in Style with ease
 ![RSG](https://media.discordapp.net/attachments/895350789512519722/1081363217462329424/image.png)
 
 ## NOTE
-* I made this mainly because I kept using an online random string generator. I was honestly tired of having to go to the web so decided to make a little app for myself. Enjoy!
-* Bugs may be present. Please feel free to push pull requests.
+* Bugs may be present. Please feel free to make pull requests. This will only run on Windows OS.
 * Shortcuts: Press Home Key to Exit.

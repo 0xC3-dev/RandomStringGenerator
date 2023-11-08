@@ -121,9 +121,9 @@ void Render::App()
     RSG::CalcCenterScreen();
 
     // Create application window
-    WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, "RSG", NULL };
+	WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, "RSG", NULL };
     RegisterClassEx(&wc);
-    hwnd = CreateWindow(wc.lpszClassName, "RSG", WS_POPUP | WS_OVERLAPPED, 0, 0, 0, 0, NULL, NULL, wc.hInstance, NULL);
+    hwnd = CreateWindow(wc.lpszClassName, "RSG", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, NULL);
 
     if (!CreateDeviceD3D(hwnd))
     {
@@ -768,7 +768,7 @@ namespace ImGui
 			// Minimize and Close Button.
 			ImGui::SCP(5, -5);
 			ImGui::PushFont(FA);
-			ImGui::PushStyleColorCustom(ImColor(255, 255, 255, 255));
+			ImGui::PushStyleColorCustom(ImColor(0, 112, 224, 125));
 			if (ImGui::Button(ICON_FA_WINDOW_MINIMIZE, ImVec2(25, 20)))
 			{
 				RSG::WinMinimize("RSG");
@@ -783,7 +783,9 @@ namespace ImGui
 				}
 				ImGui::PopStyleColor();
 			}
+			ImGui::PopStyleColor(4);
 			ImGui::SCP(30, 2);
+			ImGui::PushStyleColorCustom(ImColor(0, 112, 224, 125));
 			if (ImGui::Button(ICON_FA_TIMES, ImVec2(25, 20)))
 			{
 				RSG::WinClose();
