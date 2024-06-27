@@ -125,7 +125,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
     </ClCompile>
     <Link>
@@ -149,6 +149,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App_UI\UI.hpp" />
+    <ClInclude Include="D3D11_SDK\d3d11.hpp" />
+    <ClInclude Include="D3D11_SDK\d3dx11.hpp" />
+    <ClInclude Include="D3D11_SDK\d3dx11async.hpp" />
+    <ClInclude Include="D3D11_SDK\d3dx11core.hpp" />
+    <ClInclude Include="D3D11_SDK\d3dx11tex.hpp" />
     <ClInclude Include="Fonts\Awesome.hpp" />
     <ClInclude Include="Fonts\Awesome_Light.hpp" />
     <ClInclude Include="Fonts\FontAwesome5\fa-solid-900.hpp" />
@@ -172,6 +177,7 @@
     <ClInclude Include="Variables\Variables.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitattributes" />
     <None Include=".gitignore" />
     <None Include="README.md" />
   </ItemGroup>
@@ -180,6 +186,13 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource\RandStrGen.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="D3D11_SDK\d3d11.lib" />
+    <Library Include="D3D11_SDK\d3dx11.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

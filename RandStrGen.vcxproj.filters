@@ -113,10 +113,26 @@
     <ClInclude Include="Includes\Includes.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="D3D11_SDK\d3d11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11_SDK\d3dx11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11_SDK\d3dx11async.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11_SDK\d3dx11core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11_SDK\d3dx11tex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="README.md" />
+    <None Include=".gitattributes" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Icon\RSG_Logo.ico">
@@ -127,5 +143,12 @@
     <ResourceCompile Include="Resource\RandStrGen.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="D3D11_SDK\d3d11.lib" />
+    <Library Include="D3D11_SDK\d3dx11.lib" />
   </ItemGroup>
 </Project>

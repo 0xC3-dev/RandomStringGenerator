@@ -889,7 +889,7 @@ namespace ImGui
 				{
 					ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(4, 4));
 					ImGui::PushStyleColor(ImGuiCol_PopupBg, ImVec4(ImColor(64, 64, 64, 125)));
-					ImGui::SetTooltip("  -  Change Slider Design  -  ");
+					ImGui::SetTooltip("  *  Change Slider Design    ");
 					ImGui::PopStyleColor();
 					ImGui::PopStyleVar();
 				}
