@@ -32,5 +32,5 @@ Generate Random Strings in Style with ease
 ![RSG3](https://i.imgur.com/6XxxogP.png)
 
 ## NOTE
-* Bugs may be present. Please feel free to make pull requests. This will only run on Windows OS. If you wish to improve upon the codebase, feel free to make pull requests. Meaningful contributions are always welcome!
+* Bugs may be present. This will only run on Windows OS. If you wish to improve upon the codebase, feel free to make pull requests. Meaningful contributions are always welcome!
 * Shortcuts: Press Home Key to Exit.
