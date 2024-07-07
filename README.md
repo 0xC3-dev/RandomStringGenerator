@@ -26,11 +26,11 @@ Generate Random Strings in Style with ease
 * Lightweight Application
 * Copy Generated Strings right to your Clipboard
 
+## NOTE
+* Bugs may be present. This will only run on Windows OS. If you wish to improve upon the codebase, feel free to make pull requests. Meaningful contributions are always welcome!
+* Shortcuts: Press Home Key to Exit.
+
 ## Preview
 ![RSG1](https://i.imgur.com/fU9U9W9.png)
 ![RSG2](https://i.imgur.com/OQE5c5F.png)
 ![RSG3](https://i.imgur.com/6XxxogP.png)
-
-## NOTE
-* Bugs may be present. This will only run on Windows OS. If you wish to improve upon the codebase, feel free to make pull requests. Meaningful contributions are always welcome!
-* Shortcuts: Press Home Key to Exit.
